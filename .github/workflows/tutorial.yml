@@ -11,6 +11,6 @@ jobs:
     name: First Test Job 
     runs-on: ubuntu-20.04
     steps:
-      name: Show os details
-      run: lsb_release -a
+      - name: Show os details
+        run: lsb_release -a
 
