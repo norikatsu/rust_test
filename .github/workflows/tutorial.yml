@@ -1,7 +1,16 @@
 # github actions test yml
+name: turotial
+
+on:
+  workflow_dispatch:
+
 
 jobs:
   # Job name
   first_test_job:
     name: First Test Job 
+    runs-on: ubuntu-20.04
+    steps:
+      name: Show os details
+      run: lsb_release -a
 
